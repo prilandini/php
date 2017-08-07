@@ -13,7 +13,7 @@
 	<?php 
 	    if(isset($_POST['submit'])) {
             if(is_numeric($_POST['input'])){
-				echo "Karakter yang anda masukkan berupa angka";}else
+		echo "Karakter yang anda masukkan berupa angka";}else
             if(is_string($_POST['input'])){
                 echo "Karakter yang anda masukkan berupa huruf";}
 		}
