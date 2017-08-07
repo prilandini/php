@@ -4,7 +4,7 @@
 <form name="form1" method="post" action="lingkaran.php">
 <pre>
 jari-jari=<input type="text" name="jari"><br>
-<input type="submit" name="hitung" value="Hitung">
+<input type="submit" name="hitung" value="hitung">
 <?php
 if (!empty($_POST['jari'])){
 $phi=22/7;
@@ -13,8 +13,7 @@ $luas=$phi*$r*$r;
 $keliling= $phi*($r+$r);
 }
 
-extract($_POST);
-if (isset ($hitung))
+if (isset ($_POST['hitung']))
 {echo "Luasnya lingkaran dengan jari-jari $r adalah $luas.
 keliling lingkaran dengan jari-jari $r adalah $keliling";}
 ?>
